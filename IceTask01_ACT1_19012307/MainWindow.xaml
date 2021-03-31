@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Background="AliceBlue" Width="150" Height="50" Click="buttonClicked"> Click Me! </Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Name="TextChanger" Grid.Row="1" HorizontalAlignment="Center" > Hi there</TextBlock>
+        <Button Background="AliceBlue" Width="150" Height="50" Click="buttonClicked" Grid.Row="2"> Click Me! </Button>
         
     </Grid>
 </Window>

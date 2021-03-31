@@ -23,5 +23,15 @@ namespace IceTask01_ACT1_19012307
         {
             InitializeComponent();
         }
+
+        void buttonTwo(object sender, RoutedEventArgs e)
+        {
+
+
+            MainWindow win1 = new MainWindow();
+            win1.TextChanger.Text = textChangeTB.Text;
+            win1.Show();
+            this.Close();
+        }
     }
 }
